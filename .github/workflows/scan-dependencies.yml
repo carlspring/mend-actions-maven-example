@@ -29,6 +29,11 @@ jobs:
       - name: Login into Mend.io
         uses: carlspring/mend-actions/login@feat/scan-dependencies
 
+      - name: Debug
+        run: |
+          ls -al
+          tree
+
       - name: Perform scan
         uses: carlspring/mend-actions/scan-dependencies@feat/scan-dependencies
         with:
