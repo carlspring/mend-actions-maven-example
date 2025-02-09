@@ -3,10 +3,10 @@ name: Test the dependencies scan action
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 
 env:
   MEND_URL: ${{ secrets.MEND_URL }}
