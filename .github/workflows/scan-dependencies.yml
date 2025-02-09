@@ -24,13 +24,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Mend CLI
-        uses: carlspring/mend-actions/setup
+        uses: carlspring/mend-actions/setup@master
 
       - name: Login into Mend.io
-        uses: carlspring/mend-actions/login
+        uses: carlspring/mend-actions/login@master
 
       - name: Perform scan
-        uses: carlspring/mend-actions/scan-dependencies
+        uses: carlspring/mend-actions/scan-dependencies@master
         with:
           scope: "*//CTNR - FORME/webgoat-maven"
 
