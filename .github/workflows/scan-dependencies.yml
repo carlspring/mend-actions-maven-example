@@ -1,4 +1,4 @@
-name: Test the dependencies scan action
+name: Scan dependencies
 
 on:
   pull_request:
@@ -30,6 +30,7 @@ jobs:
         uses: carlspring/mend-actions/login@feat/scan-dependencies
 
       - name: Debug
+        if: always()
         run: |
           ls -al
           tree
