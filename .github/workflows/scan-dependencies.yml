@@ -43,7 +43,7 @@ jobs:
       - name: Perform scan
         uses: carlspring/mend-actions/scan-dependencies@feat/scan-dependencies
         with:
-          scope: *//CTNR - FORME/webgoat-maven
+          scope: "*//CTNR - FORME/webgoat-maven"
 
       - name: Debug
         if: always()
