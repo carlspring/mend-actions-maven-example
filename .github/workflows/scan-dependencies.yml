@@ -41,6 +41,7 @@ jobs:
           scope: "*//CTNR - FORME/webgoat-maven"
 
       - name: Debug
+        if: always()
         run: |
           ls -al
           tree
