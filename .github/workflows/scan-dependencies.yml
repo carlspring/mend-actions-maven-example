@@ -16,7 +16,7 @@ env:
   MEND_EMAIL: ${{ secrets.MEND_EMAIL }}
 
 permissions:
-  actions: read
+  actions: write
   contents: read
   security-events: write
 
