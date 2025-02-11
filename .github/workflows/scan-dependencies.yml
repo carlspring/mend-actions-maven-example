@@ -50,6 +50,6 @@ jobs:
         run: |
           ls -al
           tree
-          cat dependencies.json
+#          cat dependencies.json
 
 
